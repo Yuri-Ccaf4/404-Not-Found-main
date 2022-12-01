@@ -1,0 +1,113 @@
+@import url("reset.css");
+@import url("media-query.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;500;600&display=swap');
+
+body {
+  background-color: #5b7478;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+header .header {
+  max-width: 1000px;
+  margin: auto;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.centralize {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  padding: 120px 0;
+  gap: 120px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.img {
+  max-width: 540px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 6rem;
+  letter-spacing: -0.035em;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text p {
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  max-width: 381px;
+}
+
+button {
+  width: 216px;
+  padding: 20px 0;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:hover {
+  color: #ffcc80;
+  border: none;
+}
+
+button:before {
+  content: " ";
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 60px;
+  background-color: rgb(61, 61, 61);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  color: #bdbdbd;
+  width: 100%;
+}
+
+footer p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
